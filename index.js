@@ -8,5 +8,6 @@ app.get('/', function(rep,res){
 
 app.listen(3000,function(){
 
-    console.log("Conexão inicializada na porta 3000")
+
+    console.log("Conexão inicializada")
 })
