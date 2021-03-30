@@ -6,6 +6,9 @@ app.get('/', function(rep,res){
     res.send('Ola Naty.')
 })
 
+app.get('/mensagem', function(rep,res){
+    res.send("Essa mensagem é automática!")})
+
 app.listen(3000,function(){
 
 
