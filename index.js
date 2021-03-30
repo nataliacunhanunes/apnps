@@ -9,6 +9,9 @@ app.get('/', function(rep,res){
 app.get('/msg', function(rep,res){
     res.send("Essa mensagem é automática!")})
 
+app.get('/sobre', function(rep,res){
+        res.send("Essa página está sendo devolvida pela Naty")})
+
 app.listen(3000,function(){
 
 
