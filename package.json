@@ -1,24 +1,21 @@
 {
-  " nome " : " sistemaweb " ,
-  " versão " : " 1.0.0 " ,
-  " descrição " : " Sistema web para gerenciamento de APNPs " ,
-  " main " : " index.js " ,
-  " scripts " : {
-    " test " : " echo \" Erro: nenhum teste especificado \ " && exit 1 "
-  },
-  " palavras-chave " : [
-    " APNPs " ,
-    " Sistema " ,
-    " Web " ,
-    " Gerenciamento "
-  ],
-  " autor " : " Natalia Cunha " ,
-  " licença " : " ISC " ,
-  " dependências " : {
-    " body-parser " : " ^ 1.19.0 " ,
-    " analisador de cookies " : " ^ 1.4.5 " ,
-    " ejs " : " ^ 3.1.6 " ,
-    " expresso " : " ^ 4.17.1 " ,
-    " caminho " : " ^ 0,12,7 "
+    "name": "sistemaweb",
+    "version": "1.0.0",
+    "description": "Sistema web gerenciamento de APNPs",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "APNPs",
+      "Sistema",
+      "Web",
+      "Gerenciamento"
+    ],
+    "author": "Natalia Cunha",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
   }
-}
+  
