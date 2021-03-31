@@ -1,19 +1,23 @@
-const express = require ('express')
-const app = express()
+const  express  =  require  ( "express" )
+const  app  =  express ( )
+var  bodyParser  =  require ( "body-parser" )
+var  cookieParser  =  require ( "analisador de cookies" )
+var  path  =  require ( "path" ) 
 
-app.get('/', function(rep,res){
+app . use ( cookieParser ( ) )
 
-    res.send('Ola Naty.')
-})
+app . use ( bodyParser . json ( ) )
+app . use ( bodyParser . urlencoded ( { extended : false } ) )
 
-app.get('/msg', function(rep,res){
-    res.send("Essa mensagem é automática!")})
+app . set ( "view engine" ,  "ejs" )
 
-app.get('/sobre', function(rep,res){
-        res.send("Essa página está sendo devolvida pela Naty")})
+app . use ( express . static ( path . join ( __dirname , "public" ) ) )
 
-app.listen(3000,function(){
+app . get  ( '/' ,  função ( req , res ) {
+res . enviar  ( "Olá Naty" )
+} )
 
 
-    console.log("Conexão inicializada")
-})
+app . listen ( 3000 ,  function ( ) {
+    console . log  ( "Conexão inicializada" )
+} )
