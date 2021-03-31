@@ -15,8 +15,6 @@ app.get('/', function(req,res){
     res.send('Ola Naty.')
 })
 
-app.listen(3000,function(){
-
-
-    console.log("Conexão inicializada")
-})
+app.listen ( 3000 ,  function ( ) {
+    console . log  ( "Conexão inicializada" )
+} )
