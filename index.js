@@ -3,7 +3,7 @@ const app = express()
 var bodyParser = require('body-parser')
 var cookieParser = require('cookie-parser')
 
-app.use(bodyParser())
+app.use(cookieParser())
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:false}))
